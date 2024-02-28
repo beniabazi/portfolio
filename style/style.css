@@ -355,7 +355,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url();
+        background-image: url(../img/wallpaper.jpg);
     }
     .header-text{
         margin-top: 100%;
