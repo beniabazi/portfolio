@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>besimabazi.dev</title>
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/2016d1ef99.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container"></div>
+    <nav>
+        <h1 style="font-family: 'Courier New', Courier, monospace; color: red; font-size: 50px; font-weight: 500;">besimabazi.dev</h1>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <h1>Welcome to <br><span>Alpha Tech Designs</span></h1>
+    </div>
+</div>
+<!------------------------about---------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/img/profile.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p> I am a full stack developer based in Melbourne, Victoria.</p>
+                <br>
+                <P>Looking to bring your web ideas to life!</P>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experiance')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Developing custom built web applications for a wide range of business needs.</li>
+                     
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experiance">
+                    <ul>
+                        <li><span>Experience</span><br>Designing Web/App Interfaces suitable to a range of business solutions.</li>
+                   
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Education</span><br>ICT - Software Development</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------services---------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="subtitle">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Client Side</h2>
+                <p>Custom light weight & responsive website (1-5 pages) suitable for clients who do not manage a large data set.</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h2>Server Side</h2>
+                <p>Server integrated custom website developed to manage large range of data (inventory, customer data).</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-recycle"></i>
+                <h2>Website Refresh</h2>
+                <p>Suited for clients who have a existing website in need of UI/UX, SEO and Responsiveness upgrade.</p>
+                <a href="#contact">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------portfolio---------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/img/redstore.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>discription about this app....</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/img/ecom.png" alt="">
+                <div class="layer">
+                    <h3>Hosting</h3>
+                    <p>discription about this app....</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/img/img3.jpg" alt="">
+                <div class="layer">
+                    <h3>Web Site</h3>
+                    <p>discription about this app....</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------------contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> email address here</p>
+                <p><i class="fa-solid fa-phone"></i> phone number here</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/Downloadable CV File.txt" download class="btn btn2">Downlod CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Alpha Tech Designs. All rights reserved.</p>
+</div>
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx8bZAvL_Gh9-5RO9KFdfLD7vHhBXlM1O7_4Btdsfm54M__qgM0r8Bl0uIBv5GH_NjBEg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
